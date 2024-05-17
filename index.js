@@ -1,3 +1,4 @@
+
 module.exports = {
   ignorePatterns: ['/node_modules'],
   extends: [
@@ -32,5 +33,13 @@ module.exports = {
         },
       },
     ],
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {},
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   }
 }
